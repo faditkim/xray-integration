@@ -1,0 +1,11 @@
+results/
+keepass_keyfile/
+__pycache__/
+*.pyc
+sapgui-test-automation.key
+browser/
+*.html
+*.xml
+*.jpg
+*log.txt
+*.key
