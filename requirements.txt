@@ -1,2 +1,4 @@
 robotframework
 robotframework-browser
+robotframework-seleniumlibrary
+selenium==4.9.0

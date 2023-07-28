@@ -1,11 +1,12 @@
 *** Settings ***
 Library   Browser
+Library    SeleniumLibrary
 
 *** Keywords ***
 Open Browser with
     [Arguments]    ${url}
-    New Browser    browser=chromium    headless=False
-    New Page    url=${url}
+    Browser.New Browser    browser=chromium    headless=False
+    Browser.New Page    url=${url}
 
 Verify Page Loaded
     [Arguments]    ${url1}
@@ -16,4 +17,15 @@ Get Text and compare
     [Arguments]    ${element}    ${text}
     ${textValue}=    Browser.Get Text    ${element}
     Should Be Equal    ${text}    ${textValue}
+
+Open Browser with Selenium
+    [Arguments]    ${url}
+    SeleniumLibrary.Open Browser    ${url}    browser=firefox
+
+Verify Page Loaded with Selenium
+    [Arguments]    ${url}
+    SeleniumLibrary.Title Should Be    ${url}
+
+Close Browser with Selenium
+    SeleniumLibrary.Close All Browsers
 
