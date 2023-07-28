@@ -1,6 +1,6 @@
 *** Settings ***
 Library   Browser
-Library    SeleniumLibrary
+Library    SeleniumLibrary    run_on_failure=Capture Page Screenshot    screenshot_root_directory=EMBED
 
 *** Keywords ***
 Open Browser with
