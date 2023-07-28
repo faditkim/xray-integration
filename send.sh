@@ -15,7 +15,7 @@
 #   * Absolute path - /<yourRepoPath>/<robotFrameworkOutputPath>/output.xml
 #   * Relative path - ./<robotFrameworkOutputPath>/output.xml
 
-curl -H "Content-Type: multipart/form-data" -u admin:admin -F "file=@./results/output.xml" http://localhost:8080/rest/raven/1.0/import/execution/robot?projectKey=PROB&testPlanKey=PROB-3
+curl -H "Content-Type: multipart/form-data" -u tkim:1234567890 -F "file=@./results/output.xml" http://localhost:8080/rest/raven/1.0/import/execution/robot?projectKey=PROB
 
 
 # References
