@@ -25,6 +25,7 @@ Open Browser with Selenium
 Verify Page Loaded with Selenium
     [Arguments]    ${url}
     SeleniumLibrary.Location Should Be    ${url}
+    SeleniumLibrary.Capture Page Screenshot
 
 Close Browser with Selenium
     SeleniumLibrary.Close All Browsers
