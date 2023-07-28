@@ -24,7 +24,7 @@ Open Browser with Selenium
 
 Verify Page Loaded with Selenium
     [Arguments]    ${url}
-    SeleniumLibrary.Title Should Be    ${url}
+    SeleniumLibrary.Location Should Be    ${url}
 
 Close Browser with Selenium
     SeleniumLibrary.Close All Browsers

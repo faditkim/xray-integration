@@ -10,5 +10,5 @@ Simple Login
     # LandingPage.Open Browser with     https://sapqm0.sappuc.de/sap/bc/ui2/flp#Shell-home
     # LandingPage.Verify Page Loaded    https://sapqm0.sappuc.de/sap/bc/ui2/flp#Shell-home
     LandingPage.Open Browser with Selenium    https://www.naver.com
-    LandingPage.Verify Page Loaded with Selenium    test
+    LandingPage.Verify Page Loaded with Selenium    https://www.naver.com
     
