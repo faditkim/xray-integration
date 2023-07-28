@@ -1,1 +1,1 @@
-robot --loglevel WARN --removekeywords FOR -d ./results/ -i simple-login ./tests/basic.robot
+robot --loglevel WARN --removekeywords FOR -d ./results/ ./tests/basic.robot
